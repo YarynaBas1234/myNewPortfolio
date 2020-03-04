@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="bg-footer pl-10 pr-10">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" data-activates="slide-out" class="button-collapse displ-block"><i class="material-icons">menu</i></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">About</a></li>
+                <li><a href="index2.html">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row valign-wrapper">
+            <div class="col s12">
+                <h4 class="center-align mt-50 tell-me">Зателефонувати мені</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container box-shadow p-20 h-100">
+        <div class="row h-75 mb-0 p-20">
+            <div class="col s8 h-100">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Last name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone">
+            </div>
+            <div class="col s4 h-100">
+                <textarea class="height p-10" cols="4" rows="5" placeholder="Comment"></textarea>
+            </div>
+            <input class="col s12 center-align p-20 pb-0 bg-color mt-20"  type="submit" placeholder="Submit">
+        </div>
+
+
+
+
+
+
+
+
+        <!-- <div class="row">
+            <div class="col s4">
+                <input type="text" placeholder="First name">
+            </div>
+            <div class="col s4">
+                <input type="text" placeholder="Last name">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s8 center-align">
+                <input type="text" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s8 center-align">
+                <input type="text" placeholder="Phone">
+            </div>
+        </div>
+-->
+        <!-- <div class="row mb-0 pt-20 pr-l-30">
+            <input class="col s12 center-align p-10  bg-color"  type="submit" placeholder="Submit">
+        </div>  -->
+        
+    <!-- </div> -->
+
+
+
+    <!-- бокове меню -->
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="picture1.jpeg">
+                </div>
+                <a href="#!user"><img class="circle" src="picture1.jpeg"></a>
+                <a href="#!name"><span class="white-text name">Vasyl Semenovuch</span></a>
+                <a href="#!email"><span class="white-text email">vasa_sem@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        <li>
+            <input class="waves-effect waves-light btn width-button" type="button" value="closed" onclick="absClosed()">
+        </li>
+    </ul>
+      <!-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a> -->
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+      $('.carousel').carousel();
+      $('.carousel.carousel-slider').carousel({fullWidth: true});  //для методу + скрипт для каруселі шоб працювало 
+      $(".button-collapse").sideNav(); //для бокового меню при кліку на кнопку
+    });
+
+    function absClosed(){
+        $(".button-collapse").sideNav('hide'); //для бокового меню при кліку на кнопку
+    }
+  </script>
+
+</body>
+</html>

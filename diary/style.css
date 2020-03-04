@@ -1,0 +1,113 @@
+body{
+    overflow-x: hidden;
+}
+.font-size-h1{
+    font-size: 40px;
+}
+.font-size-h2{
+    font-size: 30px;
+}
+.block1{
+    /* width: 20px; */
+    height: 20px;
+    /* position: absolute; */
+}
+.block2{
+    width: 17px;
+    height: 17px;
+    /* border-right: 1px solid black; */
+    /* border-top: 1px solid gray; */
+    transform: rotate(45deg);
+    margin-top: 5px;
+    margin-left: -9px;
+    /* position: absolute; */
+}
+.block3{
+    width: 17px;
+    height: 17px;
+    /* border-right: 1px solid black; */
+    /* border-top: 1px solid gray; */
+    transform: rotate(45deg);
+    margin-top: 5px;
+    margin-right: -9px;
+    /* position: absolute; */
+}
+.picture-rewards{
+    width: 30px;
+    height: 30px;
+}
+
+.bg-pink{
+    background-color: rgb(240, 163, 176);
+}
+.bg-green{
+    background-color: rgb(108, 206, 108);
+}
+.numb{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+.image{
+    width: 140px;
+    height: 150px;
+}
+.block2-1::after{
+    content: " ";
+    border: 20px solid rgb(209, 207, 207);
+    border-left: 3px solid rgb(209, 207, 207);
+    border-top: 1px solid rgb(209, 207, 207);
+    border-bottom: 1px solid rgb(209, 207, 207);
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.block2-2::after{
+    content: " ";
+    border: 20px solid rgb(160, 235, 91);
+    border-left: 3px solid rgb(160, 235, 91);
+    border-top: 1px solid rgb(160, 235, 91);
+    border-bottom: 1px solid rgb(160, 235, 91);
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.block2-3::after{
+    content: " ";
+    border: 20px solid rgb(53, 172, 202);
+    border-left: 3px solid rgb(53, 172, 202);
+    border-top: 1px solid rgb(53, 172, 202);
+    border-bottom: 1px solid rgb(53, 172, 202);
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.block2-4::after{
+    content: " ";
+    border: 20px solid rgb(252, 122, 176);
+    border-left: 3px solid rgb(252, 122, 176);
+    border-top: 1px solid rgb(252, 122, 176);
+    border-bottom: 1px solid rgb(252, 122, 176);
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+
+
+
+@media (max-width: 970px){
+    .text-none{
+        display: none;
+    }
+
+}
+
+@media (max-width: 943px){
+    .text-bl{
+        margin-bottom: 30px !important;
+    }
+}
+
+@media (max-width: 993px){
+    .button1{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

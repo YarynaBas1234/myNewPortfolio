@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="bg-footer pl-10 pr-10">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" data-activates="slide-out" class="button-collapse displ-block "><i class="material-icons">menu</i></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">About</a></li>
+                <li><a href="index2.html">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row valign-wrapper">
+            <div class="col s12 center-align">
+                <img class="picture-ava " src="picture1.jpeg" alt="">
+                <h4>Василь Семенович</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 valign-wrapper">
+                <p class="center-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, illo, corrupti modi harum quae fugit est consequuntur at ducimus error excepturi! Sapiente deserunt culpa et voluptas quos molestias vel laborum!
+                Nemo facere eveniet, corporis nisi velit quas quam, dignissimos maiores, reiciendis eum corrupti culpa laborum quis impedit debitis perspiciatis natus labore esse hic consequuntur magnam asperiores rem. Eligendi, quis quisquam.
+                Eveniet exercitationem, quia voluptate incidunt mollitia officiis modi ducimus quis fugiat animi at nihil quas, dolor nesciunt iste similique tenetur ea rem beatae ratione? Voluptate et nam saepe sint neque.
+                Est ipsam fuga, temporibus distinctio eos, culpa, qui autem odit ex eligendi maiores ducimus dolorem minima officia hic sit voluptatum atque debitis aliquid corporis? Officiis accusantium molestiae facilis aliquam maxime?</p>
+            </div>
+        </div>
+
+         <!-- карусель -->
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="sky1.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="sky2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="sky3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="sky4.png"></a>
+        <a class="carousel-item" href="#five!"><img src="sky5.png"></a>
+      </div>
+
+    </div>
+
+
+    <div class="footer">
+        <div class="row bg-footer p-20 grey-text text-lighten-5">
+            <div class="col s3 d-flex justify-content-center">
+                <p>Василь Семенович</p>
+                <p class="p-0 m-0">© 2018 Yaryna All rights reserved.</p>
+                <p class="p-0 m-0">Designed by Yaryna.</p>
+            </div>
+            <div class="col s4">
+                <p class="">jaryna.bas@gmail.com</p>
+                <p>+ (38) 067 92 11 201</p>
+            </div>
+            <div class="col s2">
+                <p class="p-0 m-0">
+                    <a class="grey-text text-lighten-5" href="#">HOME</a>
+                </p>
+                <p class="p-0 m-0">
+                    <a class="grey-text text-lighten-5" href="#">SKILLS</a>
+                </p>
+                <p class="p-0 m-0">
+                    <a class="grey-text text-lighten-5" href="#">ABOUT ME</a>
+                </p>
+                <p class="p-0 m-0">
+                    <a class="grey-text text-lighten-5" href="#">WORKS</a>
+                </p>
+                <p class="p-0 m-0">
+                    <a class="grey-text text-lighten-5" href="#">NEED A PROJECT?</a>
+                </p>
+            </div>
+            <div class="col s3">
+                <p class="center">Instagram</p>
+                <p class="center">Facebook</p>
+            </div>
+        </div>
+    </div>
+
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="picture1.jpeg">
+                </div>
+                <a href="#!user"><img class="circle" src="picture1.jpeg"></a>
+                <a href="#!name"><span class="white-text name">Vasyl Semenovuch</span></a>
+                <a href="#!email"><span class="white-text email">vasa_sem@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        <li>
+            <input class="waves-effect waves-light btn width-button" type="button" value="closed" onclick="absClosed()">
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+      $('.carousel').carousel();
+      $('.carousel.carousel-slider').carousel({fullWidth: true});  //для методу + скрипт для каруселі шоб працювало 
+      $(".button-collapse").sideNav(); //для бокового меню при кліку на кнопку
+    });
+
+    function absClosed(){
+        $(".button-collapse").sideNav('hide'); //для бокового меню при кліку на кнопку
+    }
+  </script>
+
+</body>
+</html>

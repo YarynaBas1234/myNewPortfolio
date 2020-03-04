@@ -1,0 +1,95 @@
+body{
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+.displ-block{
+    display: block !important;
+}
+
+.p-0{
+    padding: 0 !important;
+}
+.m-0{
+    margin: 0 !important;
+}
+.pb-0{
+    padding-bottom: 0 !important;
+}
+
+.p-20{
+    padding: 20px !important;
+}
+.p-10{
+    padding: 10px !important;
+}
+.pl-10{
+    padding-left: 10px;
+}
+.pr-10{
+    padding-right: 10px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.pt-30{
+    padding-top: 30px;
+}
+.pr-l-20{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.width-button{
+    width: 290px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(30, 31, 44);
+}
+.zzz{
+    width: 200px;
+    height: 150px;
+}
+.block-txt{
+    width: 400px;
+    height: 250px;
+
+}
+.block2{
+    text-align: center;
+    position: fixed;
+    top: 15%;
+    left: 70%;
+    /* z-index: 777; */
+}
+.ml-2{
+    margin-left: 20px;
+}
+.picture-ava{
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+}
+.bg-footer{
+    background-color: rgb(30, 31, 44);
+    /* opacity: 0.5; */
+}
+.box-shadow{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.tell-me{
+    
+}
+.bg-color{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+.height{
+    height: 350px;
+}
